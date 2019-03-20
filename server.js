@@ -17,7 +17,7 @@ const db = require('./config/keys').mongoURI
 
 // Connect to MongoDB
 mongoose
-.connect(db, { useNewUrlParser: true } )
+.connect(db, { useNewUrlParser: true})
 .then(() => console.log('MongoDb Connected...'))
 .catch(err => console.log(err))
 
@@ -34,4 +34,4 @@ if(process.env.NODE_ENV === 'production'){
 
 const port = process.env.Port || 5001
 
-// app.listen(port, () => console.log('Server started on port ' + port))
+app.listen(port, () => console.log('Server started on port ' + port))
