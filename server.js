@@ -23,6 +23,3 @@ mongoose
 
 app.use('/api/items', items)
 
-const port = process.env.Port || 3001
-
-app.listen(port, () => console.log('Server started on port ' + port))
